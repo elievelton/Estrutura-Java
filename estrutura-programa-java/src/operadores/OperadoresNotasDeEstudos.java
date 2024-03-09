@@ -1,4 +1,5 @@
 package operadores;
+/* Usando esses códigos apenas para revisões e aprendizagem */
 
 public class OperadoresNotasDeEstudos {
     public static void main(String[] args) {
@@ -38,6 +39,12 @@ public class OperadoresNotasDeEstudos {
         contador++;  
         contador++;
         System.err.println("\n O incremento é de "+ contador);
+
+        //Opercação de decremento
+        int contador1 = 10;
+        contador1--;
+        contador1--;
+        System.out.println("\n O decremento é:" + contador1);
 
     }
 }
