@@ -29,7 +29,7 @@ public class BubbleSort {
         int n = arr.length; // Obtém o tamanho do array
         // Loop para percorrer todos os elementos do array
         for (int i = 0; i < n-1; i++) {
-            // Loop para percorrer os elementos restantes do array
+            // Loop para percorrer os elementos restantes do array por isso diminui o i
             for (int j = 0; j < n-i-1; j++) {
                 // Verifica se o elemento atual é maior que o próximo
                 if (arr[j] > arr[j+1]) {
