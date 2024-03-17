@@ -23,10 +23,10 @@ public class AddEdade { // Inicia a definição da classe AddEdade
             System.out.println("É essa a sua idade? (sim/não)"); // Pergunta ao usuário se o palpite está correto
             String resposta = scanner.nextLine().toLowerCase(); // Lê a resposta do usuário e a converte para minúsculas
 
-            if (resposta.equals("s")) { // Verifica se a resposta do usuário é "s"
+            if (resposta.equals("s")||resposta.equals("sim")) { // Verifica se a resposta do usuário é "s"
                 System.out.println("Yay! Adivinhei corretamente!"); // Exibe uma mensagem de sucesso
                 idadeAdivinhada = true; // Define idadeAdivinhada como true para encerrar o loop
-            } else if (resposta.equals("n")) { // Verifica se a resposta do usuário é "n"
+            } else if (resposta.equals("n")||resposta.equals("no")||resposta.equals("nao")) { // Verifica se a resposta do usuário é "n"
                 System.out.println("Hmm, então estou errado. Deixe-me tentar novamente."); // Exibe uma mensagem de erro
                 int novoPalpite = random.nextInt(100) + 1; // Gera um novo palpite aleatório
                 System.out.println("Minha próxima suposição é: " + novoPalpite + " anos."); // Exibe o novo palpite na tela
