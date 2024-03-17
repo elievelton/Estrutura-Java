@@ -3,48 +3,50 @@ package operadores;
 
 public class OperadoresNotasDeEstudos {
     public static void main(String[] args) {
-
-        //Operação de soma
-        int numero1 = 1;
-        int numero2 = 2;
-        int soma = numero1 + numero2;
-        System.out.println("\n A soma dos numeros é : " + soma);
-
-        //Operação de subtração
-        int numero3 = 3;
-        int numero4 = 4;
-        int subtracao = numero4 - numero3;
-        System.out.println("\n A subtracao dos numeros é : " + subtracao);
-
-        //Operação de multiplicação
-        int numero5 = 5;
-        int numero6 = 6;
-        int multiplicacao = numero5 * numero6;
-        System.out.println("\n A multiplicacao dos numeros é : " + multiplicacao);
-
-        //Operação de Divisão
-        int numero7 = 7;
-        int numero8 = 70;
-        int divisao = numero8 / numero7;
-        System.out.println("\n A divisão dos numeros é : " + divisao);
-
-        //Operação de Modulo
-        int numero9 = 9;
-        int numero10 = 91;
-        int modulo = numero10 % numero9;
-        System.out.println("\n O Modulo do numero10 e numero 9 é:"+ modulo);
-
-        //Operação de decremento e incremento
-        int contador = 0;
-        contador++;  
-        contador++;
-        System.err.println("\n O incremento é de "+ contador);
-
-        //Opercação de decremento
-        int contador1 = 10;
-        contador1--;
-        contador1--;
-        System.out.println("\n O decremento é:" + contador1);
-
+        // Operadores Aritméticos
+        int a = 10, b = 5;
+        System.out.println("Operadores Aritméticos:");
+        System.out.println("Soma: " + (a + b));        // Adição
+        System.out.println("Subtração: " + (a - b));   // Subtração
+        System.out.println("Multiplicação: " + (a * b));  // Multiplicação
+        System.out.println("Divisão: " + (a / b));    // Divisão
+        System.out.println("Resto da Divisão: " + (a % b));  // Resto da divisão
+        
+        // Operadores de Atribuição
+        int c = 10;
+        c += 5; // Equivalente a c = c + 5;
+        System.out.println("\nOperadores de Atribuição:");
+        System.out.println("Valor de c após c += 5: " + c); // Atribuição e operação de adição
+        
+        // Operadores Relacionais
+        System.out.println("\nOperadores Relacionais:");
+        System.out.println("a == b: " + (a == b));  // Igualdade
+        System.out.println("a != b: " + (a != b));  // Diferença
+        System.out.println("a > b: " + (a > b));    // Maior que
+        System.out.println("a < b: " + (a < b));    // Menor que
+        System.out.println("a >= b: " + (a >= b));  // Maior ou igual a
+        System.out.println("a <= b: " + (a <= b));  // Menor ou igual a
+        
+        // Operadores Lógicos
+        boolean x = true, y = false;
+        System.out.println("\nOperadores Lógicos:");
+        System.out.println("x && y: " + (x && y));  // E lógico
+        System.out.println("x || y: " + (x || y));  // OU lógico
+        System.out.println("!x: " + (!x));          // Negação lógica
+        
+        // Operadores Bitwise
+        int m = 5, n = 3;
+        System.out.println("\nOperadores Bitwise:");
+        System.out.println("m & n: " + (m & n));    // AND bitwise
+        System.out.println("m | n: " + (m | n));    // OR bitwise
+        System.out.println("m ^ n: " + (m ^ n));    // XOR bitwise
+        System.out.println("~m: " + (~m));          // Complemento bitwise
+        
+        // Operadores de Deslocamento
+        int p = 10;
+        System.out.println("\nOperadores de Deslocamento:");
+        System.out.println("p << 2: " + (p << 2));  // Deslocamento para a esquerda
+        System.out.println("p >> 2: " + (p >> 2));  // Deslocamento para a direita com sinal
+        System.out.println("p >>> 2: " + (p >>> 2));// Deslocamento para a direita sem sinal
     }
 }
